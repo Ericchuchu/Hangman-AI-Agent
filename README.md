@@ -175,3 +175,9 @@ The agent dynamically selects a specialized model based on the length of the par
 
 6. **Fallback Logic**  
    If no good letter is found (e.g., all probabilities low), the agent picks a random unguessed letter.
+
+## Limitations
+
+- The reinforcement-learning agents reached about 90% wins in the training environment but about 10% on words from outside it; they overfitted to the letter-frequency features of the training list. That is why the final solver relies mainly on the gradient-boosting agents.
+- The win rate of the final ensemble solver is not reported in this repository.
+- Trained models and word lists are not included, and `ensemble_solver.py` loads models from the paths of the original runs.
