@@ -1,0 +1,71 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+*.egg-info/
+.eggs/
+dist/
+build/
+*.egg
+
+# Virtual environments
+venv/
+ENV/
+env/
+.venv/
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Jupyter Notebook
+.ipynb_checkpoints/
+*.ipynb_checkpoints
+
+# Project-specific: Large model files (use cloud storage instead)
+models/
+ml_process/models_trained/
+ml_process/models_trained_2/
+ml_process/models_trained_short/
+
+# Training logs (reproducible)
+logs/
+
+# CatBoost training artifacts
+ml_process/catboost_info/
+catboost_info/
+
+# Large data files (can be regenerated or downloaded separately)
+ml_process/combined_hangman_data.parquet
+ml_process/combined_hangman_data_short.parquet
+ml_process/hangman_data/
+ml_process/hangman_data_short/
+
+# Temporary files
+*.tmp
+*.temp
+temp_batch_*.parquet
+
+# Generated plots (can be regenerated)
+ml_process/*.png
+*.png
+
+# Optional: Uncomment to exclude word lists (they can be large)
+# *.txt
+# !README.txt
+
+# Word lists are not redistributed (bring your own, see README)
+words_*.txt
+cleaned_words.txt
+train_words.txt
+eval_words.txt
+short_words.txt
